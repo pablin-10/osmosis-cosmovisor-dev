@@ -22,7 +22,7 @@ on:
       - main
       - v[0-9]+.x
       - v[0-9]+.x-iavl-v1
-      - cosmovisor_binary_fixuser
+      - buil/cosmovisor_binary_fixuser
 
 env:
   RUNNER_BASE_IMAGE_ALPINE: alpine:3.17

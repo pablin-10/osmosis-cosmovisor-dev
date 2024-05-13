@@ -85,8 +85,7 @@ EXPOSE 26656
 EXPOSE 26657
 EXPOSE 1317
 
-USER osmosis
-GROUP osmosis
+USER osmosis:osmosis
 
 ENTRYPOINT ["cosmovisor"]
 
