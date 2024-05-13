@@ -22,13 +22,13 @@ on:
       - main
       - v[0-9]+.x
       - v[0-9]+.x-iavl-v1
-      - buil/cosmovisor_binary_fixuser
+      - build_cosmovisor_binary_fixuser
 
 env:
   RUNNER_BASE_IMAGE_ALPINE: alpine:3.17
   OSMOSIS_DEV_IMAGE_REPOSITORY: osmolabs/osmosis-dev
   OSMOSIS_INIT_CHAIN_IMAGE_REPOSITORY: osmolabs/osmosis-e2e-init-chain
-  OSMOSIS_DEV_IMAGE_COSMOVISOR_REPOSITORY: pablin10/osmosis-cosmovisor-dev:tagname
+  OSMOSIS_DEV_IMAGE_COSMOVISOR_REPOSITORY: pablin10/osmosis-cosmovisor-dev
 
 jobs:
   push-docker-images:
