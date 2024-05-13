@@ -28,7 +28,7 @@ env:
   RUNNER_BASE_IMAGE_ALPINE: alpine:3.17
   OSMOSIS_DEV_IMAGE_REPOSITORY: osmolabs/osmosis-dev
   OSMOSIS_INIT_CHAIN_IMAGE_REPOSITORY: osmolabs/osmosis-e2e-init-chain
-  OSMOSIS_DEV_IMAGE_COSMOVISOR_REPOSITORY: osmolabs/osmosis-dev-cosmovisor
+  OSMOSIS_DEV_IMAGE_COSMOVISOR_REPOSITORY: pablin10/osmosis-cosmovisor-dev:tagname
 
 jobs:
   push-docker-images:
@@ -109,7 +109,7 @@ jobs:
             GIT_VERSION=${{ env.OSMOSIS_VERSION }}
             GIT_COMMIT=${{ github.sha }}
           tags: |
-            ${{ env.OSMOSIS_DEV_IMAGE_COSMOVISOR_REPOSITORY }}:${{ env.DOCKER_IMAGE_TAG }}
+            ${{ env.OSMOSIS_DEV_IMAGE_COSMOVISOR_REPOSITORY }}:latest
 
   push-docker-images-arm:
     runs-on: buildjet-2vcpu-ubuntu-2204-arm
