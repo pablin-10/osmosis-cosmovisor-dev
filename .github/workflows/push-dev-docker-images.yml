@@ -32,7 +32,7 @@ env:
 
 jobs:
   push-docker-images:
-    runs-on: buildjet-2vcpu-ubuntu-2204
+    runs-on: buildjet-4vcpu-ubuntu-2204	
     # runs-on: ubuntu-22.04
     steps:
       -
